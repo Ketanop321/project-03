@@ -49,7 +49,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ onItemClick, isPanelOpen }) => {
     // Pass content to parent for panel display
     onItemClick(
       {
-        imgURL: imgDiv.style.backgroundImage,
+        imgURL: `/assets/${item.image}`,
         title,
         desc,
         position,

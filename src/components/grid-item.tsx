@@ -42,7 +42,7 @@ const GridItem: React.FC<GridItemProps> = ({ item, onClick, effectConfig = {} })
       <div
         className="grid__item-image"
         style={{
-          backgroundImage: `url(${process.env.NODE_ENV === "production" ? "/RepeatingImageTransition-main/assets/" : "/RepeatingImageTransition-main/assets/"}${item.image})`,
+          backgroundImage: `url(/assets/${item.image})`,
         }}
       />
       <figcaption className="grid__item-caption" id={`caption-${item.id}`}>
